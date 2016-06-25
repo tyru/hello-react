@@ -1,12 +1,15 @@
-const React = require('react');
-const ReactDOM = require('react-dom');
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-const Hello = React.createClass({
-  render: function() {
+class App extends React.Component {
+  render() {
     return (
-      <div className="container">Hello {this.props.name}</div>
+      <div className="container">Hello React in ES6 style</div>
     );
   }
-})
+}
 
-ReactDOM.render(<Hello name="React" />, document.getElementById("app"));
+ReactDOM.render(
+  <App />,
+  document.getElementById("app")
+);
